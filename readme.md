@@ -52,12 +52,10 @@ Insert data : http://localhost:8000/api/incomecat/create (POST)
 
 ### Site
 
-URL : https://simplewalletapp.herokuapp.com/api/
+URL : https://simplewalletapp.herokuapp.com
 
 Use Postman tool for performing integration testing with your API.
 Postman Colletion link: https://www.getpostman.com/collections/c2f2f656d9907c78bb09
-
-Note: You can change environment Postman type Online URL or Local URL
 
 ### Database Data Structure
 ![ecommapi](https://raw.githubusercontent.com/zuams/lapo-project/master/Backend%203.png)
