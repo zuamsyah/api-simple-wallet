@@ -38,8 +38,8 @@ View all expense_cat : http://localhost:8000/api/expensecat (GET)\
 View detail,Edit,Delete expense_cat : http://localhost:8000/api/expensecat/{id} (GET)(PATCH)(DELETE)\
 Insert data : http://localhost:8000/api/expensecat/create (POST)
 4. Income cat
-View all expense_cat : http://localhost:8000/api/incomecat (GET)\
-View detail,Edit,Delete expense_cat : http://localhost:8000/api/incomecat/{id} (GET)(PATCH)(DELETE)\
+View all income_cat : http://localhost:8000/api/incomecat (GET)\
+View detail,Edit,Delete income_cat : http://localhost:8000/api/incomecat/{id} (GET)(PATCH)(DELETE)\
 Insert data : http://localhost:8000/api/incomecat/create (POST)
 
 ### Requirement
