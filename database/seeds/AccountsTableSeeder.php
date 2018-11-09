@@ -25,7 +25,7 @@ class AccountsTableSeeder extends Seeder
                 'balance' => 75000
             ],
             [
-                'name' => 'Yusuf',
+                'name' => 'Agus',
                 'balance' => 52500
             ],
             [
@@ -33,7 +33,7 @@ class AccountsTableSeeder extends Seeder
                 'balance' => 95300
             ],
         	[
-                'name' => 'Rifqi',
+                'name' => 'Yusuf',
                 'balance' => 82100
             ],
             [

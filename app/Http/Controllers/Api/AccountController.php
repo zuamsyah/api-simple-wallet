@@ -44,7 +44,7 @@ class AccountController extends Controller
 
         if (Accounts::create($input)) {
             return response()->json([
-                'message' => 'OK',
+                'message' => 'The resource is created successfully',
                 'code' => 201
             ],201);
         } else {

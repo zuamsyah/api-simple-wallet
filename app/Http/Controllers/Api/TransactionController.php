@@ -43,9 +43,9 @@ class TransactionController extends Controller
 
         if (Transaction::create($input)) {
             return response()->json([
-                'message' => 'OK',
-                'code' => 200
-            ],200);
+                'message' => 'The resource is created successfully',
+                'code' => 201
+            ],201);
         } else {
             return response()->json([
                 'message' => 'Internal Error',
@@ -103,9 +103,9 @@ class TransactionController extends Controller
 
         if ($transaction->update($input)) {
             return response()->json([
-                'message' => 'The resource is created successfully',
-                'code' => 201
-            ],201);
+                'message' => 'OK',
+                'code' => 200
+            ],200);
         } else {
             return response()->json([
                 'message' => 'Internal Error',

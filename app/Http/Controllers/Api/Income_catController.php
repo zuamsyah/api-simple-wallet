@@ -109,8 +109,8 @@ class Income_catController extends Controller
         } else {
             return response()->json([
                 'message' => 'OK',
-                'code' => 201
-            ],201);
+                'code' => 200
+            ],200);
         }
     }
 
