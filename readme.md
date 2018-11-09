@@ -27,7 +27,7 @@ An Wallet APP Restful API using Laravel API Resource (Laravel Version 5.7, PHP v
 
 1. Accounts
 View all account : http://localhost:8000/api/accounts (GET)\
-View detail account : http://localhost:8000/api/accounts/{id} (GET)(PATCH)(DELETE)\
+View detail,Edit,Delete account : http://localhost:8000/api/accounts/{id} (GET)(PATCH)(DELETE)\
 Insert data : http://localhost:8000/api/accounts/create (POST)
 2. Transaction
 View all transaction : http://localhost:8000/api/transactions (GET)\
