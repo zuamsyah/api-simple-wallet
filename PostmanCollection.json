@@ -1,0 +1,476 @@
+{
+	"variables": [],
+	"info": {
+		"name": "API - Simple Wallet App",
+		"_postman_id": "2d1ddae4-0a76-89d7-a46f-a8b269ca4786",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Accounts",
+			"description": "",
+			"item": [
+				{
+					"name": "Accounts",
+					"request": {
+						"url": "{{base_url}}/accounts/",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": null
+					},
+					"response": []
+				},
+				{
+					"name": "New Accounts Entry",
+					"request": {
+						"url": "{{base_url}}/accounts/create",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Linus Torvalds",
+									"type": "text"
+								},
+								{
+									"key": "balance",
+									"value": "10000",
+									"type": "text"
+								}
+							]
+						},
+						"description": null
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Accounts Entry",
+					"request": {
+						"url": "{{base_url}}/accounts/3",
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Gates",
+									"type": "text"
+								},
+								{
+									"key": "balance",
+									"value": "100000",
+									"type": "text"
+								}
+							]
+						},
+						"description": null
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Accounts Entry",
+					"request": {
+						"url": "{{base_url}}/accounts/2",
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": null
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Transaction",
+			"description": "Api for Data Transaction",
+			"item": [
+				{
+					"name": "Transaction",
+					"request": {
+						"url": "{{base_url}}/transactions/",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "date",
+									"value": "2018-10-11",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "OUT",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "10000",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "zuam",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "balance",
+									"value": "9000",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "expense_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"description": null
+					},
+					"response": []
+				},
+				{
+					"name": "New Transaction Entry",
+					"request": {
+						"url": "{{base_url}}/transactions/create",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "type",
+									"value": "Pemasukan",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "3",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "10000",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "expense_id",
+									"value": "2",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": null
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Transaction Entry",
+					"request": {
+						"url": "{{base_url}}/transactions/4",
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "type",
+									"value": "Pengeluaran",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "3",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "900010",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "expense_id",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": null
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Transaction Entry",
+					"request": {
+						"url": "{{base_url}}/transactions/3",
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": null
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Expense_cat",
+			"description": "",
+			"item": [
+				{
+					"name": "Expense_cat",
+					"request": {
+						"url": "{{base_url}}/expensecat/",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Alan Turing",
+									"type": "text"
+								}
+							]
+						},
+						"description": null
+					},
+					"response": []
+				},
+				{
+					"name": "New Expense_cat Entry",
+					"request": {
+						"url": "{{base_url}}/expensecat/create",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Beli Bahan Baku",
+									"type": "text"
+								}
+							]
+						},
+						"description": null
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Expense_cat Entry",
+					"request": {
+						"url": "{{base_url}}/expensecat/1",
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Beli Minyak Goreng dan Gas",
+									"type": "text"
+								}
+							]
+						},
+						"description": null
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Expense_cat Entry",
+					"request": {
+						"url": "{{base_url}}/expensecat/4",
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": null
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Income_cat",
+			"description": "",
+			"item": [
+				{
+					"name": "Income_cat",
+					"request": {
+						"url": "{{base_url}}/incomecat/",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": null
+					},
+					"response": []
+				},
+				{
+					"name": "New Income_cat Entry",
+					"request": {
+						"url": "{{base_url}}/incomecat/create",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Penjualan Eceran",
+									"type": "text"
+								}
+							]
+						},
+						"description": null
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Income_cat Entry",
+					"request": {
+						"url": "{{base_url}}/incomecat/1",
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Penjualan Online",
+									"type": "text"
+								}
+							]
+						},
+						"description": null
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Income_cat Entry",
+					"request": {
+						"url": "{{base_url}}/incomecat/4",
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": null
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
